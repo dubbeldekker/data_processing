@@ -1,3 +1,10 @@
+<!-- 
+Naam: Marije Dekker
+
+Ik heb deze week niet echt tijd gehad om deze opdracht te maken, ivm een andere opdracht van een ander vak.
+Vandaar dat deze opdracht zo onvolledig is, sorry.
+-->
+
 <!DOCTYPE html.
 <html>
       <head>
@@ -376,18 +383,40 @@
             </textarea>
             <canvas id="my_canvas" width="800" height="400" style="border:1px solid #000000;"></canvas>
             <script>
+                  // create the needed lists
                   var rawdata = document.getElementById("rawdata").innerHTML;
                   var data = rawdata.split("\n");
-                  var dates = []
+                  var rawdate = []
                   var temperature = []
                   for (i = 0; i <= 364; i++){
-                        dates.push(data[i].substring(0, 10));
+                        rawdate.push(data[i].substring(0, 10));
                         temperature.push(data[i].substring(11, 17));
                   }
+                  var date = [];
+                  for (i = 0; i <= 364; i++){
+                        date.push(new Date(rawdate[i]));
+                  }
+                  // create canvas for line-graph
                   var canvas = document.getElementById("my_canvas");
                   var ctx = canvas.getContext("2d");
-                  ctx.font = "30px Arial";
-                  ctx.fillText("Mijn naam is Marije",10,50);
+                  function createTransform(domain, range){
+                        \\ domain is a two-element array of the data bounds [domain_min, domain_max]
+                        \\ range is a two-element array of the screen bounds [range_min, range_max]
+                        \\ This gives you two equations to solve:
+                        \\ range_min = alpha * domain_min + beta
+                        \\ range_max = alpha * domain_max + beta
+                              \\ Implement your solution here:
+                              var alpha = ...;
+                        var beta = ...;
+                        
+                        return function(x){
+                              return alpha * x + beta;
+                        };
+                  }
+                  /*ctx.moveTo(date[0], temperature[0]);
+                  for (i = 1; i <= 364; i++){
+                        lineTo(date[i], temperature[i])
+                  }*/
             </script>
       </body>
 </html>
