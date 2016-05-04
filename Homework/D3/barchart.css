@@ -1,0 +1,21 @@
+h3{
+	color: #7D000E;
+}
+.bar {
+	fill: #FFBFFF;
+}
+.axis text {
+	font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.x.axis path {
+	display: none;
+}
+svg{
+	height: 600px;
+}
