@@ -8,3 +8,32 @@ h3 {
 	width: 800px;
 	height: 450px;
 }
+.my-legend ul.legend-labels li span 
+{
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+}
+
+.my-legend fieldset ul 
+{
+
+    float: left;
+    list-style: none;
+}
+
+.my-legend fieldset ul li 
+{
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+fieldset{
+	width: 250px;
+}

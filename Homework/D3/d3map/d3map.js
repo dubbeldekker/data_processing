@@ -25,7 +25,7 @@ var rawdata = d3.json("worldpopulation.json", function(rawdata){
 	            SEVEN: '#D94801',
 	            EIGHT: '#8C2D04',
 	            defaultFill: 'black'
-	        }
+	       }
 	});
 	var templand;
 	for(i in population){
