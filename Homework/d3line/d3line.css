@@ -1,0 +1,22 @@
+/* Marije Dekker */
+.axis path,
+.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+}
+
+.x.axis{
+	height: 200px;
+}
+
+.line {
+  	fill: none;
+ 	stroke: #771468;
+  	stroke-width: 2.5px;
+}
+
+.overlay {
+	fill: none;
+  	pointer-events: all;
+}
