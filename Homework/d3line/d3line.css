@@ -12,8 +12,8 @@
 
 .line {
   	fill: none;
- 	stroke: #771468;
-  	stroke-width: 2.5px;
+ 	stroke: red;
+  	stroke-width: 2px;
 }
 
 .overlay {

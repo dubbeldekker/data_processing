@@ -1,0 +1,46 @@
+<!-- Marije Dekker, 10785949 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>D3 multi-line graph</title>
+		<link rel="stylesheet" type="text/css" href="d3lineExtended.css"/>
+		<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		<h2>De minimum, maximum en gemiddelde temperatuur, per etmaal, gemeten in De Bilt, van 2010 t/m 2015.</h2>
+		<p>data processing, D3 line graph</p>
+		<div>
+			<div class="btn-group pull-left">
+  				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+   						 jaar <span class="caret"></span>
+ 				</button>
+  				<ul class="dropdown-menu" role="menu">
+   					<li><a class="year" value="2010" href="#">2010</a></li>
+    				<li><a class="year" value="2011" href="#">2011</a></li>
+    				<li><a class="year" value="2012" href="#">2012</a></li>
+    				<li><a class="year" value="2013" href="#">2013</a></li>
+    				<li><a class="year" value="2014" href="#">2014</a></li>
+    				<li><a class="year" value="2015" href="#">2015</a></li>
+  				</ul>
+			</div>
+			<div id="mlines">
+			</div>
+	    </div>
+		<script src="d3lineExtended.js"></script>
+		<div class="my-legend">
+			<fieldset>
+				<legend class="legend">legenda:</legend>
+				<ul class="legend-labels">
+					<li><span style='background:#006600'></span>maximum temperatuur</li>
+		          	<li><span style='background:#1976D2'></span>gemiddelde temperatuur</li>
+		          	<li><span style='background:#FF6600'></span>minimum temperatuur</li>
+				</ul>
+			</fieldset>
+		</div>
+		<p>Wanneer je op een jaar in het drop-down menu klikt, verschijnd dat jaar in een lijn-grafiek. Echter werkt de overgang tot nu toe niet, dus wanneer je een ander jaar wil zien, zal eerst de pagina gerefresht moeten worden.</p>
+		<p>De gebruikte data is gedownload van de KNMI website</p>
+	</body>
+</html>
