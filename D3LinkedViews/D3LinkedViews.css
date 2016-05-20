@@ -60,6 +60,8 @@ svg{
   border: 0.1px solid #0000FF;
   float:right;
   margin-top: 165px;
+  height:200px;
+  width: 270px;
 }
 .placing{
   width: 1230px;
