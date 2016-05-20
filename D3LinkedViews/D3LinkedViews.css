@@ -5,10 +5,12 @@
 	height: 600px;
   float: left;
 }
+
 .my-legend{
   float: right;
   margin-top: 100px;
 }
+
 .my-legend ul.legend-labels li span{
     display: block;
     float: left;
@@ -36,13 +38,9 @@ fieldset{
 	width: 250px;
 }
 
-.bar{
-  fill: #666666;
-}
-
 svg{
 	height: 550px;
-  float:left;
+  float:l eft;
 }
 
 .axis path,
@@ -63,12 +61,13 @@ svg{
   height:200px;
   width: 270px;
 }
+
 .placing{
   width: 1230px;
-  height:550px;
+  height: 550px;
 }
 
 .placing2{
-  width:1300px;
-  height:600px;
+  width: 1300px;
+  height: 600px;
 }
