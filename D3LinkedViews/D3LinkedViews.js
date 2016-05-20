@@ -15,7 +15,7 @@ var map = new Datamap({
                   'The quality of life index of ' + geo.properties.name,
                   ' is ' + data.QUALITY,
                   '</div>'].join('');
-        },
+        }
       }
 });
 
@@ -116,9 +116,9 @@ d3.json("data.json", function(error, data) {
       .attr("height", function(d) { return height - y(d.qualityOfLife); })
       .attr("width", x.rangeBand())
       .style({
-          'fill': function (data, i) {
-              return colors(i);
-          }
+        'fill': function (data, i) {
+            return colors(i);
+        }
       })
       .on('mouseover', function (data) {
         dynamicColor = this.style.fill
@@ -128,7 +128,17 @@ d3.json("data.json", function(error, data) {
         var update = {}
         fillKey["fillKey"] = "over"
         update[data.countrycode] = fillKey
-        map.updateChoropleth(update)          
+        map.updateChoropleth(update)
+        document.getElementById("country").innerHTML = "facts about: " + data.country
+        document.getElementById("quality").innerHTML = "the quality of life index is " + data.qualityOfLife     
+        document.getElementById("power").innerHTML = "the purchasing power index is " + data.purchasingPower
+        document.getElementById("safety").innerHTML ="the safety index is " + data.safety
+        document.getElementById("healthcare").innerHTML = "the healthcare index is " + data.healthCare
+        document.getElementById("livingcost").innerHTML = "the cost of living index is " + data.costOfLiving 
+        document.getElementById("property").innerHTML = "the property price to income ratio is " + data.propertyPriceIncome
+        document.getElementById("traffic").innerHTML = "the traffic commute time index is " + data.trafficCommuteTime
+        document.getElementById("pollution").innerHTML = "the pollution index is " + data.pollution
+        document.getElementById("climate").innerHTML = "the climate index is " + data.climate
       })
       .on('mouseout', function (data) {
         d3.select(this)
