@@ -14,30 +14,36 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 		<script src="worldmap.js"></script>
-		<svg class="chart"></svg>      	
-		<div id="country"></div>
-		<div id="quality"></div>
-		<div id="power"></div>
-		<div id="safety"></div>
-		<div id="healthcare"></div>
-		<div id="livingcost"></div>
-		<div id="property"></div>
-		<div id="traffic"></div>
-		<div id="pollution"></div>
-		<div id="climate"></div>
-		<div id="container"></div>
-		<div class="my-legend">
-      		<fieldset>
-        		<legend class="legend">legend</legend>
-    			<ul class="legend-labels">
-		          <li><span style='background:#1A9641'></span>> 200</li>
-		          <li><span style='background:#A6D96A'></span>150 - 199</li>
-		          <li><span style='background:#FDAE61'></span>100-149</li>
-		          <li><span style='background:#D7191C'></span>< 100</li>
-		          <li><span style='background:#666666'></span>no data</li>
-    			</ul>
-      		</fieldset>
-      	</div>
+		<div class="placing">
+			<svg class="chart"></svg>      	
+			<div id="info">
+				<div id="country"></div>
+				<div id="quality"></div>
+				<div id="power"></div>
+				<div id="safety"></div>
+				<div id="healthcare"></div>
+				<div id="livingcost"></div>
+				<div id="property"></div>
+				<div id="traffic"></div>
+				<div id="pollution"></div>
+				<div id="climate"></div>
+			</div>
+		</div>
+		<div class="placing2">
+			<div id="container"></div>
+			<div class="my-legend">
+		      		<fieldset>
+		        		<legend class="legend">legend</legend>
+		    			<ul class="legend-labels">
+				          <li><span style='background:#1A9641'></span>> 200</li>
+				          <li><span style='background:#A6D96A'></span>150 - 199</li>
+				          <li><span style='background:#FDAE61'></span>100-149</li>
+				          <li><span style='background:#D7191C'></span>< 100</li>
+				          <li><span style='background:#666666'></span>no data</li>
+		    			</ul>
+		      		</fieldset>
+	      	</div>
+	    </div>
 		<p>Marije Dekker</p>
 		<script src="D3LinkedViews.js"></script>
 	</body>

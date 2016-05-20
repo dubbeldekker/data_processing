@@ -3,9 +3,13 @@
 	position: relative;
 	width: 1000px;
 	height: 600px;
+  float: left;
 }
-.my-legend ul.legend-labels li span 
-{
+.my-legend{
+  float: right;
+  margin-top: 100px;
+}
+.my-legend ul.legend-labels li span{
     display: block;
     float: left;
     height: 16px;
@@ -15,38 +19,54 @@
     border: 1px solid #999;
 }
 
-.my-legend fieldset ul 
-{
-
+.my-legend fieldset ul{
     float: left;
     list-style: none;
 }
 
-.my-legend fieldset ul li 
-{
+.my-legend fieldset ul li{
     font-size: 80%;
     list-style: none;
     margin-left: 0;
     line-height: 18px;
     margin-bottom: 2px;
 }
+
 fieldset{
 	width: 250px;
 }
 
-.bar {
+.bar{
   fill: #666666;
 }
+
 svg{
 	height: 550px;
+  float:left;
 }
+
 .axis path,
-.axis line {
+.axis line{
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-.x.axis path {
+.x.axis path{
   display: none;
+}
+
+#info{
+  border: 0.1px solid #0000FF;
+  float:right;
+  margin-top: 165px;
+}
+.placing{
+  width: 1230px;
+  height:550px;
+}
+
+.placing2{
+  width:1300px;
+  height:600px;
 }
