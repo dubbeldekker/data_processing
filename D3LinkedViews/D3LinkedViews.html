@@ -1,0 +1,36 @@
+<!-- Marije Dekker -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>D3LinkedViews</title>
+		<link rel="stylesheet" type="text/css" href="D3LinkedViews.css"/>
+		<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		<h2>The quality of life index, per country, in 2016.</h2>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+		<script src="worldmap.js"></script>
+		<div class="my-legend">
+      		<fieldset>
+        		<legend class="legend">legend</legend>
+    			<ul class="legend-labels">
+		          <li><span style='background:#1A9641'></span>> 200</li>
+		          <li><span style='background:#A6D96A'></span>150 - 199</li>
+		          <li><span style='background:#FDAE61'></span>100-149</li>
+		          <li><span style='background:#D7191C'></span>< 100</li>
+		          <li><span style='background:#666666'></span>no data</li>
+    			</ul>
+      		</fieldset>
+      	</div>
+      	<div id="container"></div>
+  		<h3>Information per country of different categories in 2016.</h3>
+		<svg class="chart"></svg>      	
+		<div class="info"></div>
+		<p>Marije Dekker</p>
+		<script src="D3LinkedViews.js"></script>
+	</body>
+</html>
